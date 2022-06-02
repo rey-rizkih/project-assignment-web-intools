@@ -4,5 +4,5 @@ export const API_BACKOFFICE = process.env.NEXT_PUBLIC_API_URL;
 export const ROUTES_PATH = {
     home: "/",
     example: "/example",
+    user: "/user",
 };
-
