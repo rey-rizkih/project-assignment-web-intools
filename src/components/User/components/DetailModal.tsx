@@ -59,32 +59,19 @@ const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
                     <Loading />
                 ) : (
                     <Grid container spacing={2}>
-                        <Grid item xs={12}>
-                            <b>Name</b>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <div className={cssInputField}>
-                                {snapshot?.name}
-                            </div>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <b>Address</b>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <div className={cssInputField}>
-                                {snapshot?.address}
-                            </div>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <b>Phone</b>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <div className={cssInputField}>
-                                {snapshot?.phone}
-                            </div>
-                        </Grid>
                         <Grid item xs={6}>
-                            <Grid item xs={12} style={{ marginBottom: 16 }}>
+                            <Grid item xs={12}>
+                                <b>Name</b>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div className={cssInputField}>
+                                    {snapshot?.name}
+                                </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                            <Grid item xs={12}>
                                 <b>Username</b>
                             </Grid>
                             <Grid item xs={12}>
@@ -93,8 +80,33 @@ const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
                                 </div>
                             </Grid>
                         </Grid>
+
                         <Grid item xs={6}>
-                            <Grid item xs={12} style={{ marginBottom: 16 }}>
+                            <Grid item xs={12}>
+                                <b>Address</b>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div className={cssInputField}>
+                                    {snapshot?.address}
+                                </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={6}></Grid>
+
+                        <Grid item xs={6}>
+                            <Grid item xs={12}>
+                                <b>Phone</b>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div className={cssInputField}>
+                                    {snapshot?.phone}
+                                </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                            <Grid item xs={12}>
                                 <b>Email</b>
                             </Grid>
                             <Grid item xs={12}>

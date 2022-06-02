@@ -11,12 +11,17 @@ export const COLUMNS_TABLE_JOB: ModuleTable[] = [
 export const MODULE_FORMS_JOB = [
     {
         type: FieldTypes.TEXT,
-        label: "Name",
-        dataIndex: "name",
+        label: "Title",
+        dataIndex: "title",
     },
     {
         type: FieldTypes.DATEPICKER,
-        label: "Date of Birth",
-        dataIndex: "dob",
+        label: "Start Date",
+        dataIndex: "startDate",
+    },
+    {
+        type: FieldTypes.DATEPICKER,
+        label: "End Date",
+        dataIndex: "endDate",
     },
 ];

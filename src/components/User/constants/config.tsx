@@ -31,6 +31,16 @@ export const MODULE_FORMS_USER = [
         dataIndex: "name",
     },
     {
+        type: FieldTypes.TEXT,
+        label: "Email",
+        dataIndex: "email",
+    },
+    {
+        type: FieldTypes.TEXT,
+        label: "Phone",
+        dataIndex: "phone",
+    },
+    {
         type: FieldTypes.DATEPICKER,
         label: "Date of Birth",
         dataIndex: "dob",
