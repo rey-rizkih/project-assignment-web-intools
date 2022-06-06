@@ -6,11 +6,11 @@ import {
     MODULE_FORMS_USER,
 } from "@components/User/constants/config";
 import DateFnsUtils from "@date-io/date-fns";
-import { FC, useState } from "react";
+import React from "react";
 
-const Users: FC = () => {
-    const [openDetailModal, setOpenDetailModal] = useState(false);
-    const [userId, setUserId] = useState(null);
+const Users: React.FC = () => {
+    const [openDetailModal, setOpenDetailModal] = React.useState(false);
+    const [userId, setUserId] = React.useState(null);
 
     const handleListResponseTransform = (response) => {
         let temp = response;

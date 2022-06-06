@@ -14,12 +14,12 @@ import {
     cssModalWrapper,
     cssFooter,
 } from "@themes/reusableCustomStyle";
-import { FC, useEffect, useState } from "react";
+import React from "react";
 import { PROPS } from "../../constants/interface";
 
-const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [snapshot, setSnapshot] = useState();
+const DetailModal: React.FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
+    const [isLoading, setIsLoading] = React.useState(true);
+    const [snapshot, setSnapshot] = React.useState({});
 
     const { get } = useXFetcher(`${API_BACKOFFICE}/v1/api/user`);
 
@@ -40,7 +40,7 @@ const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
         return temp;
     };
 
-    useEffect(() => {
+    React.useEffect(() => {
         const handleGetDetail = () => {
             get(`/${id}`)
                 .then((response) => setSnapshot(response || {}))
