@@ -15,7 +15,7 @@ import {
     cssFooter,
 } from "@themes/reusableCustomStyle";
 import { FC, useEffect, useState } from "react";
-import { PROPS } from "../constants/interface";
+import { PROPS } from "../../constants/interface";
 
 const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
     const [isLoading, setIsLoading] = useState(true);
@@ -136,7 +136,7 @@ const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
                             </InstantTemplateProvider>
                         </Grid>
 
-                        <Grid item xs={12}>
+                        <Grid item xs={12} className={cssFooter}>
                             <Button
                                 color="secondary"
                                 variant="contained"
